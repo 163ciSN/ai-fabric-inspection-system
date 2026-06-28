@@ -1,0 +1,76 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Inspection Results</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<section class="results-page">
+
+  <h1>AI Inspection Results</h1>
+
+  <p class="subtitle">
+    Computer vision analysis completed successfully.
+  </p>
+
+  <div class="results-grid">
+
+    <div class="image-card">
+
+      <h2>Original Image</h2>
+
+      <img src="{{ original_image }}">
+
+    </div>
+
+    <div class="image-card">
+
+      <h2>Processed Output</h2>
+
+      <img src="{{ processed_image }}">
+
+    </div>
+
+  </div>
+
+  <div class="analysis-section">
+
+    <div class="analysis-card">
+      <h3>AI Detection</h3>
+      <p>Completed Successfully</p>
+    </div>
+
+    <div class="analysis-card">
+      <h3>Computer Vision</h3>
+      <p>Edge Detection Active</p>
+    </div>
+
+    <div class="analysis-card">
+      <h3>Robotic Workflow</h3>
+      <p>Industrial Inspection Running</p>
+    </div>
+
+  </div>
+
+  <a href="/" class="back-btn">
+    Analyze Another Fabric
+  </a>
+
+</section>
+
+</body>
+</html>
+

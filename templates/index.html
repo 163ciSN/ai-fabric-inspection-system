@@ -1,0 +1,116 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Fabric Inspection</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header>
+
+  <div class="logo">
+    AI Fabric Vision
+  </div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">AI Inspection</a>
+    <a href="#">Cloud</a>
+    <a href="#">About</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-left">
+
+    <h1>
+      Smart AI-Based
+      <span>Robotic Fabric Inspection</span>
+    </h1>
+
+    <p>
+      Intelligent textile defect inspection powered by Artificial Intelligence,
+      Computer Vision, Cloud Computing and DevOps Automation.
+    </p>
+
+    <div class="hero-buttons">
+
+      <button class="btn-primary">
+        Start Inspection
+      </button>
+
+      <button class="btn-secondary">
+        Industry 4.0
+      </button>
+
+    </div>
+
+  </div>
+
+  <div class="hero-right">
+
+    <div class="glass-card">
+
+      <h2>Upload Fabric Image</h2>
+
+      <p>
+        Analyze textile quality using computer vision and robotic inspection simulation.
+      </p>
+
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="image" required>
+
+        <button type="submit" class="analyze-btn">
+          Analyze Fabric
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="features">
+
+  <div class="feature-card">
+    <h3>AI Vision</h3>
+    <p>
+      OpenCV-powered edge detection and image analysis.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <h3>Robotic Workflow</h3>
+    <p>
+      Smart industrial automation simulation system.
+    </p>
+  </div>
+
+  <div class="feature-card">
+    <h3>Cloud DevOps</h3>
+    <p>
+      Dockerized deployment using AWS EC2 and CI/CD.
+    </p>
+  </div>
+
+</section>
+
+</body>
+</html>
+
